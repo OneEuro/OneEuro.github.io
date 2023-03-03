@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    height: 71px;
+    padding: 10px;
+    background: #000000;
+    display: table;
+    width: 100%;
+}
+
+.header-name {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    width: 10%;
+}
+
+.header-touch-in {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    width: 10%;
+}
+
+.header-menu {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    width: 80%;
+}
+.header-menu h4 {
+    display: inline;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: calc(0.5rem + 1vw);
+}
+
+.main-block {
+    background: #000000;
+    color: white;
+    height: 700px;
+}
+
+.main-block p {
+    padding: 30px;    
+    margin-right: 30%;
+    font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    font-size: calc(1rem + 2vw);
+}
+
+.additional-block {
+    display: inline-block;
+    width: 20%;
+    height: 15%;
+    vertical-align: top;
+    font-size: 10px;
+    margin-left: 30px;
+    width: 275px;
+    height: 75px;
+    
+}
+
+.additional-block p {
+    padding: 0px;
+    color: #C4C4C4;
+    width: 100%;
+    font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.additional-block a {
+    color: #616160;
+    font-size: 16px;
+}
+
+.portfolio-block {
+    border: #000000 dotted 3px;
+}
+
+.portfolio-header {
+    border: #000000 dotted 3px;
+}
+.portfolio-header span {
+    /* display: inline-block; */
+}
