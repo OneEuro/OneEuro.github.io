@@ -1,45 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-  <div class="header">
-    <h4 class="header-name"><a href="/index.html">KOKORIN!</a></h4>
-    <div class="header-menu">
-        <h4><a href="/index.html">Projects</a></h4>
-        <h4><a href="/index.html">About</a></h4>
-        <h4><a href="/index.html">Approach</a></h4>
-    </div>
-    <h4 class="header-touch-in"><a href="/index.html">Touch in</a></h4>
-</div>
-<div class="main-block"> 
-    <p>Hi! I'm Simon Kokorin – a brand designer with rich experience in UX/UI. I am inquisitive and broad-minded. Design-thinking ideas help me in my work. The consistent quality of my designs makes for a memorable and understandable product.</p>
-    <div class="additional-block"><p>I truly believe that the power of my ideas changes society for the better. I am currently based in Sri Lanka.</p></div>
-    <div class="additional-block"><p>And I want to spread my creativity around the world.</p>
-        <a href="/index.html" download="/test_index.html">Download the resume (2,1 mb)</a>
-    </div>
-</div>
-<div class="section"><div class="container">
-   <div class="row">
-    <div class="col-lg-12 col-sm-12 col-xs-12">
-        <div class="col-lg-6 col-xs-6 col-sm-6"><span>2020-2022</span> </div>
-        <div class="col-lg-6 col-xs-6 col-sm-6"><span>Portfolio</span> </div>
-    </div>
-   
-   for (const 146825 of name) {
-    
-   }
-    </div>
-    
-   </div>
-</div></div>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kokorin Portfolio</title>
 
+        <!-- Bootstrap CSS -->
+        <link href="./css/bootstrap.css" rel="stylesheet">
+        <link href="./css/style.css" rel="stylesheet">
+  
+    </head>
+    <body>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-</body>
+        <script>
+            $(document).ready(function() {
+                $('.popup-btn').on('click',function(event) {
+                    event.preventDefault();
+                    $('.popup').fadeIn();
+                })
+                $('.popup-close').on('click', function (event) {
+                    event.preventDefault();
+                    $('.popup').fadeOut();
+                });
+            })
+        </script>  
+
+        <div class="popup">
+            <div class="popup-dialog">
+                <div class="popup-content">
+                    
+                    <h4 class="popup-header">
+                        Let's take your project <br> to the <span>next level!</span> 
+                    </h4>
+                    <button class="popup-close">&times;</button>
+                    <div class="popup-form">
+                        <form action="#">
+                            <div class="popup-form-leftside">
+                                <input type="text" class="popup-form-input" placeholder="Name">
+                                <input type="tel" class="popup-form-input" placeholder="phoneNumber">
+                            </div>
+                            <div class="popup-form-rightside">
+                                <input type="email" class="popup-form-input" placeholder="Email">
+                                <input type="text" class="popup-form-input" placeholder="About">
+                                <button type="submit" class="popup-form-btn">Send
+                                    <div>
+                                        <span>></span>
+                                        <img src="./img/inst.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="popup-footer">
+                        <div class="popup-footer-leftside">
+                            <div class="popup-footer-item">
+                                <span>></span>
+                            </div>
+                            <div class="popup-footer-item">
+                                <a href="mailto:zvet.agency@gmail.com">zvet.agency@gmail.com</a>
+                            </div>
+                            <div class="popup-footer-item">
+                                <a href="tel:+79832115343">+7 (983) 211 53 43</a>
+                            </div>
+                        </div>
+                        <div class="popup-footer-rightside">
+                             <div class="popup-footer-item">
+                                <a href="#"><img src="./img/inst.svg" alt="Inst"></a>
+                            </div>
+                            <div class="popup-footer-item">
+                                <a href="#">
+                                    <img src="./img/Be.png"  alt="Be">
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="container">
+                <div class="header">
+
+                    <div class="row">
+
+                        <div class="col-md-2 col-xs-2">
+                            <div class="logo"><img src="/img/logo.svg" alt="Kokorin"></div>
+                        </div>
+
+                        <div class="col-md-3 col-md-offset-3 col-xs-3 col-xs-offset-1">
+                            
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <a href="/index.html">Projects</a>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <a href="/index.html">About</a>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <a href="/index.html">Approach</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-1 col-md-offset-3 col-xs-1 col-xs-offset-3 col-sm-1 col-sm-offset-4">
+                            <a href="#popup" class="popup-btn">Touch in</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="main-title">
+                                <h1>йцукенгшщзфывапролдячсмитьб <br>
+                                     Hi! I'm Simon Kokorin – a brand <br> designer with rich experience in <br> <a href="./index.html">UX/UI.</a>  I am inquisitive and broad- <br> minded. Design-thinking ideas help <br> me in my work. The consistent quality <br> of my designs makes for a memorable <br> and understandable <a href="./index.html">product.</a> </h1>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="main-gif">
+                                <!-- <img src="./img/logo.svg" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 col-sm-3">
+                            <div class="main-addBlock">I truly believe that the power of my <br> ideas changes society for the better. <br>  I am currently based in Sri Lanka.</div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 col-sm-3">
+                            <div class="main-addBlock">And I want to spread my <br> creativity around the world. <br></div>
+                            <a href="/index.html">Download the resume (2,1 mb)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-table">
+                    <table class="table">
+                        <tr>
+                            <th>2020-2022</th>
+                            <th>Portfolio</th>
+                        </tr>
+                        <tr class="portfolio-row">
+                            <td>Identity Web</td>
+                            <td>CHICHA DELIVERY</td>
+                            <td class="portfolio-arrow">></td>
+                        </tr>
+                        <tr class="portfolio-row">
+                            <td>Web</td>
+                            <td>211</td>
+                            <td class="portfolio-arrow">></td>
+                        </tr>
+                        <tr class="portfolio-row">
+                            <td>Identity Web</td>
+                            <td>CHICHA</td>
+                            <td class="portfolio-arrow">></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="contact-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4 col-xs-4 col-xs-offset-4 col-sm-8 col-sm-offset-4">
+                        <h1>text me, I don't bite</h1>
+                    </div>
+                </div> 
+
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-5 col-xs-2 col-xs-offset-3 col-sm-2 col-sm-offset-5">
+                        <div class="contact-me-ellipse">
+                            <div class="background"></div>
+                            <div class="textarea"><span>text</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-text col-md-3">
+                    <h1>Make your <br> evoke emotion!</h1>
+                </div>
+
+                <div class="footer-contacts col-md-4 col-md-offset-4">
+                    <table class="table">
+                        <tr>
+                            <th>Social</th>
+                            <th>Navigation</th>
+                            <th>Touch in</th>
+                        </tr>
+                        <tr>
+                            <td><a href="./index.html">Instagram</a></td>
+                            <td><a href="./index.html">Projects</a></td>
+                            <td><a href="./index.html">zvet.agency@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./index.html">Behance</a></td>
+                            <td><a href="./index.html">Approach</a></td>
+                            <td><a href="./index.html">+7 (983) 211 53 43</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./index.html">Telegram</a></td>
+                            <td><a href="./index.html">About</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./index.html">Whatsapp</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+       </footer>
+       
+    </body>
 </html>
